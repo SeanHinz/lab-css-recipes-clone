@@ -23,7 +23,7 @@ body {
 /* STYLES */
 /* Write your CSS below */
 html {
-  max-width: 800px;
+  max-width: 1000px;
   margin: auto;
 }
 
@@ -91,20 +91,20 @@ ul li:before {
 
 #directions {
   margin-left: 10%;
+  margin-right: 10%;
 }
 
 ol {
   list-style: none;
   margin-left: 10px;
-  font-size: 17px;
+  font-size: 18px;
   margin-bottom: 50px;
-  counter-reset: 'direction';
-  counter-increment: 'direction';
+  counter-reset: directions;
 }
 
-
 ol li::before{
-  content: counter('direction') ") ";
+  content: counter(directions) ') ';
+  counter-increment: directions
 }
 
 hr {
