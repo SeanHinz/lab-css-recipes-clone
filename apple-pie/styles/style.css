@@ -22,3 +22,91 @@ body {
 
 /* STYLES */
 /* Write your CSS below */
+html {
+  max-width: 800px;
+  margin: auto;
+}
+
+h3{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+header {
+  background-image: url('../images/apple-pie.jpg');
+  height: 530px;
+  width: 100%;
+  background-size: cover;
+  box-sizing: border-box;
+  margin-bottom: 40px;
+}
+
+h1{
+  color: white;
+  text-align: center;
+  padding-top: 200px;
+  font-size: 5em;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+#history div{
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  font-size: 18px;
+}
+
+#history img{
+  display: block;
+  margin: auto;
+  width: 40%;
+  height: 50px;
+  object-fit: cover;
+}
+
+#ingredients{
+  text-indent: 10%;
+}
+
+ul {
+  list-style: none;
+  margin-left: 10px;
+  margin-bottom: 30px;
+  font-size: 17px;
+}
+
+
+ul li:before {
+  content: "-";
+}
+
+#ingredients img {
+  display: block;
+  margin: auto;
+  width: 40%;
+  height: 60px;
+  object-fit: cover;
+}
+
+#directions {
+  margin-left: 10%;
+}
+
+ol {
+  list-style: none;
+  margin-left: 10px;
+  font-size: 17px;
+  margin-bottom: 50px;
+  counter-reset: 'direction';
+  counter-increment: 'direction';
+}
+
+
+ol li::before{
+  content: counter('direction') ") ";
+}
+
+hr {
+  width: 80%;
+}
